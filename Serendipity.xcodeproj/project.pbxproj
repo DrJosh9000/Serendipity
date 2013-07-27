@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DFFE181794A3DA00A4CB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE171794A3DA00A4CB40 /* UIKit.framework */; };
+		03DFFE1A1794A3DA00A4CB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE191794A3DA00A4CB40 /* Foundation.framework */; };
+		03DFFE1C1794A3DA00A4CB40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE1B1794A3DA00A4CB40 /* CoreGraphics.framework */; };
+		03DFFE1E1794A3DA00A4CB40 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE1D1794A3DA00A4CB40 /* CoreData.framework */; };
+		03DFFE241794A3DA00A4CB40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE221794A3DA00A4CB40 /* InfoPlist.strings */; };
+		03DFFE261794A3DA00A4CB40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE251794A3DA00A4CB40 /* main.m */; };
+		03DFFE2A1794A3DA00A4CB40 /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE291794A3DA00A4CB40 /* JDAppDelegate.m */; };
+		03DFFE2C1794A3DA00A4CB40 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE2B1794A3DA00A4CB40 /* Default.png */; };
+		03DFFE2E1794A3DA00A4CB40 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE2D1794A3DA00A4CB40 /* Default@2x.png */; };
+		03DFFE301794A3DA00A4CB40 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE2F1794A3DA00A4CB40 /* Default-568h@2x.png */; };
+		03DFFE331794A3DA00A4CB40 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */; };
+		03DFFE361794A3DB00A4CB40 /* Serendipity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE341794A3DB00A4CB40 /* Serendipity.xcdatamodeld */; };
+		03DFFE391794A3DB00A4CB40 /* JDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE381794A3DB00A4CB40 /* JDMainViewController.m */; };
+		03DFFE3C1794A3DB00A4CB40 /* JDFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE3B1794A3DB00A4CB40 /* JDFlipsideViewController.m */; };
+		03DFFE441794A3DB00A4CB40 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE431794A3DB00A4CB40 /* SenTestingKit.framework */; };
+		03DFFE451794A3DB00A4CB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE171794A3DA00A4CB40 /* UIKit.framework */; };
+		03DFFE461794A3DB00A4CB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE191794A3DA00A4CB40 /* Foundation.framework */; };
+		03DFFE471794A3DB00A4CB40 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE1D1794A3DA00A4CB40 /* CoreData.framework */; };
+		03DFFE4F1794A3DB00A4CB40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE4D1794A3DB00A4CB40 /* InfoPlist.strings */; };
+		03DFFE521794A3DB00A4CB40 /* SerendipityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE511794A3DB00A4CB40 /* SerendipityTests.m */; };
+		03DFFE5C179BB46700A4CB40 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE5B179BB46700A4CB40 /* AddressBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03DFFE481794A3DB00A4CB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03DFFE0C1794A3DA00A4CB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DFFE131794A3DA00A4CB40;
+			remoteInfo = Serendipity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DFFE141794A3DA00A4CB40 /* Serendipity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DFFE171794A3DA00A4CB40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03DFFE191794A3DA00A4CB40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03DFFE1B1794A3DA00A4CB40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03DFFE1D1794A3DA00A4CB40 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		03DFFE211794A3DA00A4CB40 /* Serendipity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Serendipity-Info.plist"; sourceTree = "<group>"; };
+		03DFFE231794A3DA00A4CB40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03DFFE251794A3DA00A4CB40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03DFFE271794A3DA00A4CB40 /* Serendipity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Serendipity-Prefix.pch"; sourceTree = "<group>"; };
+		03DFFE281794A3DA00A4CB40 /* JDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAppDelegate.h; sourceTree = "<group>"; };
+		03DFFE291794A3DA00A4CB40 /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
+		03DFFE2B1794A3DA00A4CB40 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		03DFFE2D1794A3DA00A4CB40 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		03DFFE2F1794A3DA00A4CB40 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		03DFFE321794A3DA00A4CB40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		03DFFE351794A3DB00A4CB40 /* Serendipity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Serendipity.xcdatamodel; sourceTree = "<group>"; };
+		03DFFE371794A3DB00A4CB40 /* JDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDMainViewController.h; sourceTree = "<group>"; };
+		03DFFE381794A3DB00A4CB40 /* JDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDMainViewController.m; sourceTree = "<group>"; };
+		03DFFE3A1794A3DB00A4CB40 /* JDFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFlipsideViewController.h; sourceTree = "<group>"; };
+		03DFFE3B1794A3DB00A4CB40 /* JDFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFlipsideViewController.m; sourceTree = "<group>"; };
+		03DFFE421794A3DB00A4CB40 /* SerendipityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SerendipityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DFFE431794A3DB00A4CB40 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		03DFFE4C1794A3DB00A4CB40 /* SerendipityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SerendipityTests-Info.plist"; sourceTree = "<group>"; };
+		03DFFE4E1794A3DB00A4CB40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03DFFE501794A3DB00A4CB40 /* SerendipityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerendipityTests.h; sourceTree = "<group>"; };
+		03DFFE511794A3DB00A4CB40 /* SerendipityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerendipityTests.m; sourceTree = "<group>"; };
+		03DFFE5B179BB46700A4CB40 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03DFFE111794A3DA00A4CB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DFFE5C179BB46700A4CB40 /* AddressBook.framework in Frameworks */,
+				03DFFE181794A3DA00A4CB40 /* UIKit.framework in Frameworks */,
+				03DFFE1A1794A3DA00A4CB40 /* Foundation.framework in Frameworks */,
+				03DFFE1C1794A3DA00A4CB40 /* CoreGraphics.framework in Frameworks */,
+				03DFFE1E1794A3DA00A4CB40 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DFFE3E1794A3DB00A4CB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DFFE441794A3DB00A4CB40 /* SenTestingKit.framework in Frameworks */,
+				03DFFE451794A3DB00A4CB40 /* UIKit.framework in Frameworks */,
+				03DFFE461794A3DB00A4CB40 /* Foundation.framework in Frameworks */,
+				03DFFE471794A3DB00A4CB40 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DFFE0B1794A3DA00A4CB40 = {
+			isa = PBXGroup;
+			children = (
+				03DFFE1F1794A3DA00A4CB40 /* Serendipity */,
+				03DFFE4A1794A3DB00A4CB40 /* SerendipityTests */,
+				03DFFE161794A3DA00A4CB40 /* Frameworks */,
+				03DFFE151794A3DA00A4CB40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03DFFE151794A3DA00A4CB40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03DFFE141794A3DA00A4CB40 /* Serendipity.app */,
+				03DFFE421794A3DB00A4CB40 /* SerendipityTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03DFFE161794A3DA00A4CB40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DFFE5B179BB46700A4CB40 /* AddressBook.framework */,
+				03DFFE171794A3DA00A4CB40 /* UIKit.framework */,
+				03DFFE191794A3DA00A4CB40 /* Foundation.framework */,
+				03DFFE1B1794A3DA00A4CB40 /* CoreGraphics.framework */,
+				03DFFE1D1794A3DA00A4CB40 /* CoreData.framework */,
+				03DFFE431794A3DB00A4CB40 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03DFFE1F1794A3DA00A4CB40 /* Serendipity */ = {
+			isa = PBXGroup;
+			children = (
+				03DFFE281794A3DA00A4CB40 /* JDAppDelegate.h */,
+				03DFFE291794A3DA00A4CB40 /* JDAppDelegate.m */,
+				03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */,
+				03DFFE371794A3DB00A4CB40 /* JDMainViewController.h */,
+				03DFFE381794A3DB00A4CB40 /* JDMainViewController.m */,
+				03DFFE3A1794A3DB00A4CB40 /* JDFlipsideViewController.h */,
+				03DFFE3B1794A3DB00A4CB40 /* JDFlipsideViewController.m */,
+				03DFFE341794A3DB00A4CB40 /* Serendipity.xcdatamodeld */,
+				03DFFE201794A3DA00A4CB40 /* Supporting Files */,
+			);
+			path = Serendipity;
+			sourceTree = "<group>";
+		};
+		03DFFE201794A3DA00A4CB40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03DFFE211794A3DA00A4CB40 /* Serendipity-Info.plist */,
+				03DFFE221794A3DA00A4CB40 /* InfoPlist.strings */,
+				03DFFE251794A3DA00A4CB40 /* main.m */,
+				03DFFE271794A3DA00A4CB40 /* Serendipity-Prefix.pch */,
+				03DFFE2B1794A3DA00A4CB40 /* Default.png */,
+				03DFFE2D1794A3DA00A4CB40 /* Default@2x.png */,
+				03DFFE2F1794A3DA00A4CB40 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03DFFE4A1794A3DB00A4CB40 /* SerendipityTests */ = {
+			isa = PBXGroup;
+			children = (
+				03DFFE501794A3DB00A4CB40 /* SerendipityTests.h */,
+				03DFFE511794A3DB00A4CB40 /* SerendipityTests.m */,
+				03DFFE4B1794A3DB00A4CB40 /* Supporting Files */,
+			);
+			path = SerendipityTests;
+			sourceTree = "<group>";
+		};
+		03DFFE4B1794A3DB00A4CB40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03DFFE4C1794A3DB00A4CB40 /* SerendipityTests-Info.plist */,
+				03DFFE4D1794A3DB00A4CB40 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03DFFE131794A3DA00A4CB40 /* Serendipity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DFFE551794A3DB00A4CB40 /* Build configuration list for PBXNativeTarget "Serendipity" */;
+			buildPhases = (
+				03DFFE101794A3DA00A4CB40 /* Sources */,
+				03DFFE111794A3DA00A4CB40 /* Frameworks */,
+				03DFFE121794A3DA00A4CB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Serendipity;
+			productName = Serendipity;
+			productReference = 03DFFE141794A3DA00A4CB40 /* Serendipity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03DFFE411794A3DB00A4CB40 /* SerendipityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DFFE581794A3DB00A4CB40 /* Build configuration list for PBXNativeTarget "SerendipityTests" */;
+			buildPhases = (
+				03DFFE3D1794A3DB00A4CB40 /* Sources */,
+				03DFFE3E1794A3DB00A4CB40 /* Frameworks */,
+				03DFFE3F1794A3DB00A4CB40 /* Resources */,
+				03DFFE401794A3DB00A4CB40 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03DFFE491794A3DB00A4CB40 /* PBXTargetDependency */,
+			);
+			name = SerendipityTests;
+			productName = SerendipityTests;
+			productReference = 03DFFE421794A3DB00A4CB40 /* SerendipityTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03DFFE0C1794A3DA00A4CB40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Josh Deprez";
+			};
+			buildConfigurationList = 03DFFE0F1794A3DA00A4CB40 /* Build configuration list for PBXProject "Serendipity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03DFFE0B1794A3DA00A4CB40;
+			productRefGroup = 03DFFE151794A3DA00A4CB40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03DFFE131794A3DA00A4CB40 /* Serendipity */,
+				03DFFE411794A3DB00A4CB40 /* SerendipityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03DFFE121794A3DA00A4CB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DFFE241794A3DA00A4CB40 /* InfoPlist.strings in Resources */,
+				03DFFE2C1794A3DA00A4CB40 /* Default.png in Resources */,
+				03DFFE2E1794A3DA00A4CB40 /* Default@2x.png in Resources */,
+				03DFFE301794A3DA00A4CB40 /* Default-568h@2x.png in Resources */,
+				03DFFE331794A3DA00A4CB40 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DFFE3F1794A3DB00A4CB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DFFE4F1794A3DB00A4CB40 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03DFFE401794A3DB00A4CB40 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03DFFE101794A3DA00A4CB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DFFE261794A3DA00A4CB40 /* main.m in Sources */,
+				03DFFE2A1794A3DA00A4CB40 /* JDAppDelegate.m in Sources */,
+				03DFFE361794A3DB00A4CB40 /* Serendipity.xcdatamodeld in Sources */,
+				03DFFE391794A3DB00A4CB40 /* JDMainViewController.m in Sources */,
+				03DFFE3C1794A3DB00A4CB40 /* JDFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DFFE3D1794A3DB00A4CB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DFFE521794A3DB00A4CB40 /* SerendipityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03DFFE491794A3DB00A4CB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03DFFE131794A3DA00A4CB40 /* Serendipity */;
+			targetProxy = 03DFFE481794A3DB00A4CB40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03DFFE221794A3DA00A4CB40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DFFE231794A3DA00A4CB40 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DFFE321794A3DA00A4CB40 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		03DFFE4D1794A3DB00A4CB40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DFFE4E1794A3DB00A4CB40 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03DFFE531794A3DB00A4CB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03DFFE541794A3DB00A4CB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03DFFE561794A3DB00A4CB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Serendipity/Serendipity-Prefix.pch";
+				INFOPLIST_FILE = "Serendipity/Serendipity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03DFFE571794A3DB00A4CB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Serendipity/Serendipity-Prefix.pch";
+				INFOPLIST_FILE = "Serendipity/Serendipity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		03DFFE591794A3DB00A4CB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Serendipity.app/Serendipity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Serendipity/Serendipity-Prefix.pch";
+				INFOPLIST_FILE = "SerendipityTests/SerendipityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		03DFFE5A1794A3DB00A4CB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Serendipity.app/Serendipity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Serendipity/Serendipity-Prefix.pch";
+				INFOPLIST_FILE = "SerendipityTests/SerendipityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03DFFE0F1794A3DA00A4CB40 /* Build configuration list for PBXProject "Serendipity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DFFE531794A3DB00A4CB40 /* Debug */,
+				03DFFE541794A3DB00A4CB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03DFFE551794A3DB00A4CB40 /* Build configuration list for PBXNativeTarget "Serendipity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DFFE561794A3DB00A4CB40 /* Debug */,
+				03DFFE571794A3DB00A4CB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03DFFE581794A3DB00A4CB40 /* Build configuration list for PBXNativeTarget "SerendipityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DFFE591794A3DB00A4CB40 /* Debug */,
+				03DFFE5A1794A3DB00A4CB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03DFFE341794A3DB00A4CB40 /* Serendipity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03DFFE351794A3DB00A4CB40 /* Serendipity.xcdatamodel */,
+			);
+			currentVersion = 03DFFE351794A3DB00A4CB40 /* Serendipity.xcdatamodel */;
+			path = Serendipity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03DFFE0C1794A3DA00A4CB40 /* Project object */;
+}
