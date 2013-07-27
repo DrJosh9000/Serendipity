@@ -474,6 +474,7 @@
 				03DFFE571794A3DB00A4CB40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03DFFE581794A3DB00A4CB40 /* Build configuration list for PBXNativeTarget "SerendipityTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				03DFFE5A1794A3DB00A4CB40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
