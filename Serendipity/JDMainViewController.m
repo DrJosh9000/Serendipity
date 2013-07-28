@@ -7,10 +7,11 @@
 //
 
 #import "JDMainViewController.h"
+#import "JDAlertViewBlockDelegate.h"
 #import "AddressBook/AddressBook.h"
 
 @interface JDMainViewController ()
-
+@property (nonatomic, strong) JDAlertViewBlockDelegate *confirmAlertDelegate;
 @end
 
 @implementation JDMainViewController
@@ -27,6 +28,7 @@
             [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"In order to suggest random phone calls, I need access to your Contacts. Go to Settings and change that. Don't worry, I will never secretly send your contacts to the NSA (or anyone else)." delegate:nil cancelButtonTitle:@"No worries, buddy." otherButtonTitles:nil] show];
         }
     });
+    CFRelease(addressBook);
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,9 +67,8 @@
         if (nPeople > 0) {
             
             CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeople( addressBook );
-            int randomIndex = rand() % nPeople;
-
-            ABRecordRef ref = CFArrayGetValueAtIndex(allPeople, randomIndex);
+            ABRecordRef ref = CFArrayGetValueAtIndex(allPeople, rand() % nPeople);
+            CFRelease(allPeople);
             
             //ABRecordID ident = ABRecordGetRecordID(ref);
             //NSLog(@"%d", ident);
@@ -75,29 +76,41 @@
             //ABRecordType type = ABRecordGetRecordType(ref);
             //NSLog(@"%@", (type==kABPersonType ? @"Person" : (type==kABGroupType ? @"Group" : @"Source")));
             
-            NSString *name = (__bridge NSString *)(ABRecordCopyCompositeName(ref));
+            NSString *name = (__bridge_transfer NSString *)(ABRecordCopyCompositeName(ref));
             //NSLog(@"%@", name);
             
+        
             // Get the phone numbers
-            
             ABMultiValueRef phoneMV = ABRecordCopyValue(ref, kABPersonPhoneProperty);
-            NSArray* phones = (__bridge NSArray*)ABMultiValueCopyArrayOfAllValues(phoneMV);
+            NSArray* phones = (__bridge_transfer NSArray*)ABMultiValueCopyArrayOfAllValues(phoneMV);
+            CFRelease(phoneMV);
             
             if (phones.count > 0) {
                 
-                id phone = [phones objectAtIndex: rand() % phones.count];
+                NSString *phone = [phones objectAtIndex: rand() % phones.count];
                 
-                [[[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"Now calling %@ (%@)", name, phone] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-                
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", phone]]];
-                
+                UIAlertView *confirm = [[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"Now calling %@ (%@)", name, phone] delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+                self.confirmAlertDelegate = [JDAlertViewBlockDelegate delegateWithCancelButtonAction:
+                                    ^{
+                                        // NOPE.JPG
+                                        NSLog(@"Nope, not calling %@ %@", name, phone);
+                                        self.confirmAlertDelegate = nil;
+                                    }
+                                                                         otherButtonActions:
+                                    ^{
+                                        NSLog(@"Calling %@ %@", name, phone);
+                                        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", phone]]];
+                                        self.confirmAlertDelegate = nil;
+                                    }, nil];
+                confirm.delegate = self.confirmAlertDelegate;
+                [confirm show];
             }
+    
             
-
-
         } else {
             [[[UIAlertView alloc] initWithTitle:@"No contacts on phone" message:@"You seem to have no contacts at all! Would you like to dial a completely random phone number?" delegate:nil cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil] show];
         }
+        CFRelease(addressBook);
     //} else {
     //    [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"Your device doesn't support this feature. (You'll have to make the phone call yourself...)" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     //}

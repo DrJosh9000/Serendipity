@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034A3A5D17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */; };
 		03DFFE181794A3DA00A4CB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE171794A3DA00A4CB40 /* UIKit.framework */; };
 		03DFFE1A1794A3DA00A4CB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE191794A3DA00A4CB40 /* Foundation.framework */; };
 		03DFFE1C1794A3DA00A4CB40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE1B1794A3DA00A4CB40 /* CoreGraphics.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAlertViewBlockDelegate.m; sourceTree = "<group>"; };
+		034A3A5C17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAlertViewBlockDelegate.h; sourceTree = "<group>"; };
 		03DFFE141794A3DA00A4CB40 /* Serendipity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DFFE171794A3DA00A4CB40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03DFFE191794A3DA00A4CB40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,8 @@
 		03DFFE1F1794A3DA00A4CB40 /* Serendipity */ = {
 			isa = PBXGroup;
 			children = (
+				034A3A5C17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.h */,
+				034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */,
 				03DFFE281794A3DA00A4CB40 /* JDAppDelegate.h */,
 				03DFFE291794A3DA00A4CB40 /* JDAppDelegate.m */,
 				03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */,
@@ -289,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034A3A5D17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m in Sources */,
 				03DFFE261794A3DA00A4CB40 /* main.m in Sources */,
 				03DFFE2A1794A3DA00A4CB40 /* JDAppDelegate.m in Sources */,
 				03DFFE361794A3DB00A4CB40 /* Serendipity.xcdatamodeld in Sources */,
