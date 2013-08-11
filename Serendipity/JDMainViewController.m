@@ -12,9 +12,14 @@
 
 @interface JDMainViewController ()
 @property (nonatomic, strong) JDAlertViewBlockDelegate *confirmAlertDelegate;
+-(void) reassureTheUser;
 @end
 
 @implementation JDMainViewController
+
+-(void) reassureTheUser {
+    [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"In order to suggest random phone calls, I need access to your Contacts. Go to Settings and change that. Don't worry, I will never secretly send your contacts to the NSA (or anyone else)." delegate:nil cancelButtonTitle:@"No worries, buddy." otherButtonTitles:nil] show];
+}
 
 - (void)viewDidLoad
 {
@@ -25,7 +30,7 @@
     ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
         
         if (!granted) {
-            [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"In order to suggest random phone calls, I need access to your Contacts. Go to Settings and change that. Don't worry, I will never secretly send your contacts to the NSA (or anyone else)." delegate:nil cancelButtonTitle:@"No worries, buddy." otherButtonTitles:nil] show];
+            [self reassureTheUser];
         }
     });
     CFRelease(addressBook);
@@ -39,7 +44,7 @@
 
 #pragma mark - Flipside View
 
-- (void)flipsideViewControllerDidFinish:(JDFlipsideViewController *)controller
+- (void)flipsideViewControllerDidFinish:(id)controller
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -88,7 +93,7 @@
                     
                     NSString *phone = [phones objectAtIndex: rand() % phones.count];
                     
-                    UIAlertView *confirm = [[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"Now calling %@ (%@)", name, phone] delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+                    UIAlertView *confirm = [[UIAlertView alloc] initWithTitle:@"Confirm" message:[NSString stringWithFormat:@"Now calling %@ (%@)", name, phone] delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
                     self.confirmAlertDelegate = [JDAlertViewBlockDelegate delegateWithCancelButtonAction:
                                         ^{
                                             // NOPE.JPG
@@ -115,7 +120,7 @@
         }
     
     } else {
-        [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"In order to suggest random phone calls, I need access to your Contacts. Go to Settings and change that. Don't worry, I will never secretly send your contacts to the NSA (or anyone else)." delegate:nil cancelButtonTitle:@"No worries, buddy." otherButtonTitles:nil] show];
+        [self reassureTheUser];
     }
 }
 @end

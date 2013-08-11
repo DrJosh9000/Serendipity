@@ -15,13 +15,9 @@
 		03DFFE241794A3DA00A4CB40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE221794A3DA00A4CB40 /* InfoPlist.strings */; };
 		03DFFE261794A3DA00A4CB40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE251794A3DA00A4CB40 /* main.m */; };
 		03DFFE2A1794A3DA00A4CB40 /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE291794A3DA00A4CB40 /* JDAppDelegate.m */; };
-		03DFFE2C1794A3DA00A4CB40 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE2B1794A3DA00A4CB40 /* Default.png */; };
-		03DFFE2E1794A3DA00A4CB40 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE2D1794A3DA00A4CB40 /* Default@2x.png */; };
-		03DFFE301794A3DA00A4CB40 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE2F1794A3DA00A4CB40 /* Default-568h@2x.png */; };
 		03DFFE331794A3DA00A4CB40 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */; };
 		03DFFE361794A3DB00A4CB40 /* Serendipity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE341794A3DB00A4CB40 /* Serendipity.xcdatamodeld */; };
 		03DFFE391794A3DB00A4CB40 /* JDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE381794A3DB00A4CB40 /* JDMainViewController.m */; };
-		03DFFE3C1794A3DB00A4CB40 /* JDFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE3B1794A3DB00A4CB40 /* JDFlipsideViewController.m */; };
 		03DFFE441794A3DB00A4CB40 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE431794A3DB00A4CB40 /* SenTestingKit.framework */; };
 		03DFFE451794A3DB00A4CB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE171794A3DA00A4CB40 /* UIKit.framework */; };
 		03DFFE461794A3DB00A4CB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE191794A3DA00A4CB40 /* Foundation.framework */; };
@@ -29,6 +25,10 @@
 		03DFFE4F1794A3DB00A4CB40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03DFFE4D1794A3DB00A4CB40 /* InfoPlist.strings */; };
 		03DFFE521794A3DB00A4CB40 /* SerendipityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFFE511794A3DB00A4CB40 /* SerendipityTests.m */; };
 		03DFFE5C179BB46700A4CB40 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE5B179BB46700A4CB40 /* AddressBook.framework */; };
+		03F27F4017B725F500B2C7F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F27F3F17B725F500B2C7F2 /* Images.xcassets */; };
+		03F27F4317B72AA900B2C7F2 /* TheButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F27F4117B72AA900B2C7F2 /* TheButton.png */; };
+		03F27F4417B72AA900B2C7F2 /* TheButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F27F4217B72AA900B2C7F2 /* TheButton@2x.png */; };
+		03F27F4717B732F100B2C7F2 /* JDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F27F4617B732F100B2C7F2 /* JDSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,15 +55,10 @@
 		03DFFE271794A3DA00A4CB40 /* Serendipity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Serendipity-Prefix.pch"; sourceTree = "<group>"; };
 		03DFFE281794A3DA00A4CB40 /* JDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAppDelegate.h; sourceTree = "<group>"; };
 		03DFFE291794A3DA00A4CB40 /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
-		03DFFE2B1794A3DA00A4CB40 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		03DFFE2D1794A3DA00A4CB40 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		03DFFE2F1794A3DA00A4CB40 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		03DFFE321794A3DA00A4CB40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		03DFFE351794A3DB00A4CB40 /* Serendipity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Serendipity.xcdatamodel; sourceTree = "<group>"; };
 		03DFFE371794A3DB00A4CB40 /* JDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDMainViewController.h; sourceTree = "<group>"; };
 		03DFFE381794A3DB00A4CB40 /* JDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDMainViewController.m; sourceTree = "<group>"; };
-		03DFFE3A1794A3DB00A4CB40 /* JDFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFlipsideViewController.h; sourceTree = "<group>"; };
-		03DFFE3B1794A3DB00A4CB40 /* JDFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFlipsideViewController.m; sourceTree = "<group>"; };
 		03DFFE421794A3DB00A4CB40 /* SerendipityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SerendipityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DFFE431794A3DB00A4CB40 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		03DFFE4C1794A3DB00A4CB40 /* SerendipityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SerendipityTests-Info.plist"; sourceTree = "<group>"; };
@@ -71,6 +66,11 @@
 		03DFFE501794A3DB00A4CB40 /* SerendipityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerendipityTests.h; sourceTree = "<group>"; };
 		03DFFE511794A3DB00A4CB40 /* SerendipityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerendipityTests.m; sourceTree = "<group>"; };
 		03DFFE5B179BB46700A4CB40 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		03F27F3F17B725F500B2C7F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		03F27F4117B72AA900B2C7F2 /* TheButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheButton.png; sourceTree = "<group>"; };
+		03F27F4217B72AA900B2C7F2 /* TheButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TheButton@2x.png"; sourceTree = "<group>"; };
+		03F27F4517B732F100B2C7F2 /* JDSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSettingsViewController.h; sourceTree = "<group>"; };
+		03F27F4617B732F100B2C7F2 /* JDSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +142,10 @@
 				03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */,
 				03DFFE371794A3DB00A4CB40 /* JDMainViewController.h */,
 				03DFFE381794A3DB00A4CB40 /* JDMainViewController.m */,
-				03DFFE3A1794A3DB00A4CB40 /* JDFlipsideViewController.h */,
-				03DFFE3B1794A3DB00A4CB40 /* JDFlipsideViewController.m */,
+				03F27F4517B732F100B2C7F2 /* JDSettingsViewController.h */,
+				03F27F4617B732F100B2C7F2 /* JDSettingsViewController.m */,
 				03DFFE341794A3DB00A4CB40 /* Serendipity.xcdatamodeld */,
+				03F27F3F17B725F500B2C7F2 /* Images.xcassets */,
 				03DFFE201794A3DA00A4CB40 /* Supporting Files */,
 			);
 			path = Serendipity;
@@ -153,13 +154,12 @@
 		03DFFE201794A3DA00A4CB40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03F27F4117B72AA900B2C7F2 /* TheButton.png */,
+				03F27F4217B72AA900B2C7F2 /* TheButton@2x.png */,
 				03DFFE211794A3DA00A4CB40 /* Serendipity-Info.plist */,
 				03DFFE221794A3DA00A4CB40 /* InfoPlist.strings */,
 				03DFFE251794A3DA00A4CB40 /* main.m */,
 				03DFFE271794A3DA00A4CB40 /* Serendipity-Prefix.pch */,
-				03DFFE2B1794A3DA00A4CB40 /* Default.png */,
-				03DFFE2D1794A3DA00A4CB40 /* Default@2x.png */,
-				03DFFE2F1794A3DA00A4CB40 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,9 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DFFE241794A3DA00A4CB40 /* InfoPlist.strings in Resources */,
-				03DFFE2C1794A3DA00A4CB40 /* Default.png in Resources */,
-				03DFFE2E1794A3DA00A4CB40 /* Default@2x.png in Resources */,
-				03DFFE301794A3DA00A4CB40 /* Default-568h@2x.png in Resources */,
+				03F27F4417B72AA900B2C7F2 /* TheButton@2x.png in Resources */,
+				03F27F4317B72AA900B2C7F2 /* TheButton.png in Resources */,
+				03F27F4017B725F500B2C7F2 /* Images.xcassets in Resources */,
 				03DFFE331794A3DA00A4CB40 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,9 +297,9 @@
 				034A3A5D17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m in Sources */,
 				03DFFE261794A3DA00A4CB40 /* main.m in Sources */,
 				03DFFE2A1794A3DA00A4CB40 /* JDAppDelegate.m in Sources */,
+				03F27F4717B732F100B2C7F2 /* JDSettingsViewController.m in Sources */,
 				03DFFE361794A3DB00A4CB40 /* Serendipity.xcdatamodeld in Sources */,
 				03DFFE391794A3DB00A4CB40 /* JDMainViewController.m in Sources */,
-				03DFFE3C1794A3DB00A4CB40 /* JDFlipsideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +408,8 @@
 		03DFFE561794A3DB00A4CB40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Serendipity/Serendipity-Prefix.pch";
 				INFOPLIST_FILE = "Serendipity/Serendipity-Info.plist";
@@ -419,6 +421,8 @@
 		03DFFE571794A3DB00A4CB40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Serendipity/Serendipity-Prefix.pch";
 				INFOPLIST_FILE = "Serendipity/Serendipity-Info.plist";

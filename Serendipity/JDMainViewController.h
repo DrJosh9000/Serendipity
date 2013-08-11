@@ -6,11 +6,9 @@
 //  Copyright (c) 2013 Josh Deprez. All rights reserved.
 //
 
-#import "JDFlipsideViewController.h"
-
 #import <CoreData/CoreData.h>
 
-@interface JDMainViewController : UIViewController <JDFlipsideViewControllerDelegate>
+@interface JDMainViewController : UIViewController
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 

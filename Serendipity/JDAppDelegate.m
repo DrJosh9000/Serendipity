@@ -19,8 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    JDMainViewController *controller = (JDMainViewController *)self.window.rootViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    UINavigationController *controller = (UINavigationController*)(self.window.rootViewController);
+    JDMainViewController *mainVC = (JDMainViewController *)(controller.topViewController);
+    mainVC.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 							
