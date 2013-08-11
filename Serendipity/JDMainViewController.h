@@ -11,6 +11,7 @@
 @interface JDMainViewController : UIViewController
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (weak, nonatomic) IBOutlet UIImageView *dangerModeWarning;
 
 - (IBAction)doRandomCall:(id)sender;
 

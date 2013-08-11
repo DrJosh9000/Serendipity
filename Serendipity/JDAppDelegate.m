@@ -19,6 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSString *defaultPrefsFile = [[NSBundle mainBundle] pathForResource:@"defaultPrefs" ofType:@"plist"];
+    NSDictionary *defaultPreferences = [NSDictionary dictionaryWithContentsOfFile:defaultPrefsFile];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultPreferences];
+    
     UINavigationController *controller = (UINavigationController*)(self.window.rootViewController);
     JDMainViewController *mainVC = (JDMainViewController *)(controller.topViewController);
     mainVC.managedObjectContext = self.managedObjectContext;

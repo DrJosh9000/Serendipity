@@ -24,7 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
     CFErrorRef err = NULL;
     ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, &err);
     ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
@@ -34,6 +34,12 @@
         }
     });
     CFRelease(addressBook);
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.dangerModeWarning.alpha = [[defaults objectForKey:DANGER_MODE_KEY] boolValue] ? 1.0 : 0.0;
 }
 
 - (void)didReceiveMemoryWarning

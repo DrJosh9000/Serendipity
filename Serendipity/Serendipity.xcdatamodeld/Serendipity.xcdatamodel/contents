@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3389" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="ContactAdditions" syncable="YES"/>
+    <entity name="Settings" syncable="YES"/>
     <elements>
-        <element name="ContactAdditions" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="ContactAdditions" positionX="178" positionY="189" width="128" height="45"/>
+        <element name="Settings" positionX="-27" positionY="189" width="128" height="43"/>
     </elements>
 </model>
