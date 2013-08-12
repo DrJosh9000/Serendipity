@@ -17,8 +17,8 @@
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10">
                                 <rect key="frame" x="234" y="252" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="8dp-z4-lJ7"/>
-                                    <constraint firstAttribute="width" constant="60" id="c4v-ob-rYs"/>
+                                    <constraint firstAttribute="height" constant="60" id="X3u-Ln-yCt"/>
+                                    <constraint firstAttribute="width" constant="60" id="ngP-HB-bM3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal" image="gear.png">
@@ -47,18 +47,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="puP-w1-Aar"/>
+                                    <constraint firstAttribute="height" constant="60" id="sAq-Ny-bvg"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="C2W-gA-5NT" secondAttribute="bottom" constant="45" id="LMq-62-S3x"/>
+                            <constraint firstAttribute="trailing" secondItem="Fpz-bG-yhi" secondAttribute="trailing" type="default" id="QJa-KO-9hN"/>
                             <constraint firstAttribute="bottom" secondItem="10" secondAttribute="bottom" constant="192" id="SRb-re-QGr"/>
                             <constraint firstItem="Fpz-bG-yhi" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="jxB-FR-lUV"/>
                             <constraint firstItem="Fpz-bG-yhi" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="mVA-mZ-7Vh"/>
                             <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="26" id="sK0-6o-6mB"/>
-                            <constraint firstAttribute="trailing" secondItem="Fpz-bG-yhi" secondAttribute="trailing" type="default" id="uTu-4m-PVS"/>
                             <constraint firstItem="Fpz-bG-yhi" firstAttribute="centerX" secondItem="C2W-gA-5NT" secondAttribute="centerX" type="default" id="uyZ-U7-8JX"/>
                         </constraints>
                     </view>
@@ -850,8 +850,8 @@
                                 <rect key="frame" x="85" y="49" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="kb7-sT-lvm"/>
-                                    <constraint firstAttribute="width" constant="150" id="pEU-RK-QeD"/>
+                                    <constraint firstAttribute="width" constant="150" id="GuD-qh-hoq"/>
+                                    <constraint firstAttribute="height" constant="150" id="pQY-z0-fcJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A N   A P P   B Y" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18x-y3-Huo">
