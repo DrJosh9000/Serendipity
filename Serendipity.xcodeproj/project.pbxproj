@@ -13,6 +13,12 @@
 		031BC8B917B76BA300805294 /* DangerMode.png in Resources */ = {isa = PBXBuildFile; fileRef = 031BC8B717B76BA300805294 /* DangerMode.png */; };
 		031BC8BA17B76BA300805294 /* DangerMode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 031BC8B817B76BA300805294 /* DangerMode@2x.png */; };
 		034A3A5D17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */; };
+		0377FBA317B86AFC003CAF33 /* JDBlockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377FBA217B86AFC003CAF33 /* JDBlockListViewController.m */; };
+		0377FBA617B86E6F003CAF33 /* JD.png in Resources */ = {isa = PBXBuildFile; fileRef = 0377FBA417B86E6F003CAF33 /* JD.png */; };
+		0377FBA717B86E6F003CAF33 /* JD@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0377FBA517B86E6F003CAF33 /* JD@2x.png */; };
+		0377FBAA17B86F3F003CAF33 /* JDAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377FBA917B86F3F003CAF33 /* JDAboutViewController.m */; };
+		0377FBAC17B87308003CAF33 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377FBAB17B87308003CAF33 /* CoreMotion.framework */; };
+		0377FBAE17B87789003CAF33 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377FBAD17B87789003CAF33 /* QuartzCore.framework */; };
 		03DFFE181794A3DA00A4CB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE171794A3DA00A4CB40 /* UIKit.framework */; };
 		03DFFE1A1794A3DA00A4CB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE191794A3DA00A4CB40 /* Foundation.framework */; };
 		03DFFE1C1794A3DA00A4CB40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFFE1B1794A3DA00A4CB40 /* CoreGraphics.framework */; };
@@ -55,6 +61,14 @@
 		031BC8B817B76BA300805294 /* DangerMode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DangerMode@2x.png"; sourceTree = "<group>"; };
 		034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAlertViewBlockDelegate.m; sourceTree = "<group>"; };
 		034A3A5C17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAlertViewBlockDelegate.h; sourceTree = "<group>"; };
+		0377FBA117B86AFC003CAF33 /* JDBlockListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDBlockListViewController.h; path = ../JDBlockListViewController.h; sourceTree = "<group>"; };
+		0377FBA217B86AFC003CAF33 /* JDBlockListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDBlockListViewController.m; path = ../JDBlockListViewController.m; sourceTree = "<group>"; };
+		0377FBA417B86E6F003CAF33 /* JD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JD.png; sourceTree = "<group>"; };
+		0377FBA517B86E6F003CAF33 /* JD@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JD@2x.png"; sourceTree = "<group>"; };
+		0377FBA817B86F3F003CAF33 /* JDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutViewController.h; sourceTree = "<group>"; };
+		0377FBA917B86F3F003CAF33 /* JDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAboutViewController.m; sourceTree = "<group>"; };
+		0377FBAB17B87308003CAF33 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0377FBAD17B87789003CAF33 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		03DFFE141794A3DA00A4CB40 /* Serendipity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DFFE171794A3DA00A4CB40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03DFFE191794A3DA00A4CB40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +108,8 @@
 				03DFFE1A1794A3DA00A4CB40 /* Foundation.framework in Frameworks */,
 				03DFFE1C1794A3DA00A4CB40 /* CoreGraphics.framework in Frameworks */,
 				03DFFE1E1794A3DA00A4CB40 /* CoreData.framework in Frameworks */,
+				0377FBAC17B87308003CAF33 /* CoreMotion.framework in Frameworks */,
+				0377FBAE17B87789003CAF33 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +149,8 @@
 		03DFFE161794A3DA00A4CB40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0377FBAD17B87789003CAF33 /* QuartzCore.framework */,
+				0377FBAB17B87308003CAF33 /* CoreMotion.framework */,
 				03DFFE5B179BB46700A4CB40 /* AddressBook.framework */,
 				03DFFE171794A3DA00A4CB40 /* UIKit.framework */,
 				03DFFE191794A3DA00A4CB40 /* Foundation.framework */,
@@ -146,15 +164,19 @@
 		03DFFE1F1794A3DA00A4CB40 /* Serendipity */ = {
 			isa = PBXGroup;
 			children = (
+				0377FBA817B86F3F003CAF33 /* JDAboutViewController.h */,
+				0377FBA917B86F3F003CAF33 /* JDAboutViewController.m */,
 				034A3A5C17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.h */,
 				034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */,
 				03DFFE281794A3DA00A4CB40 /* JDAppDelegate.h */,
 				03DFFE291794A3DA00A4CB40 /* JDAppDelegate.m */,
-				03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */,
+				0377FBA117B86AFC003CAF33 /* JDBlockListViewController.h */,
+				0377FBA217B86AFC003CAF33 /* JDBlockListViewController.m */,
 				03DFFE371794A3DB00A4CB40 /* JDMainViewController.h */,
 				03DFFE381794A3DB00A4CB40 /* JDMainViewController.m */,
 				03F27F4517B732F100B2C7F2 /* JDSettingsViewController.h */,
 				03F27F4617B732F100B2C7F2 /* JDSettingsViewController.m */,
+				03DFFE311794A3DA00A4CB40 /* MainStoryboard.storyboard */,
 				03DFFE341794A3DB00A4CB40 /* Serendipity.xcdatamodeld */,
 				03F27F3F17B725F500B2C7F2 /* Images.xcassets */,
 				03DFFE201794A3DA00A4CB40 /* Supporting Files */,
@@ -165,6 +187,8 @@
 		03DFFE201794A3DA00A4CB40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0377FBA417B86E6F003CAF33 /* JD.png */,
+				0377FBA517B86E6F003CAF33 /* JD@2x.png */,
 				031BC8B717B76BA300805294 /* DangerMode.png */,
 				031BC8B817B76BA300805294 /* DangerMode@2x.png */,
 				031BC8B517B7644900805294 /* defaultPrefs.plist */,
@@ -283,7 +307,9 @@
 				031BC8B217B74D3400805294 /* gear.png in Resources */,
 				03F27F4317B72AA900B2C7F2 /* TheButton.png in Resources */,
 				03F27F4017B725F500B2C7F2 /* Images.xcassets in Resources */,
+				0377FBA617B86E6F003CAF33 /* JD.png in Resources */,
 				031BC8BA17B76BA300805294 /* DangerMode@2x.png in Resources */,
+				0377FBA717B86E6F003CAF33 /* JD@2x.png in Resources */,
 				031BC8B617B7644900805294 /* defaultPrefs.plist in Resources */,
 				03DFFE331794A3DA00A4CB40 /* MainStoryboard.storyboard in Resources */,
 				031BC8B917B76BA300805294 /* DangerMode.png in Resources */,
@@ -321,7 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0377FBA317B86AFC003CAF33 /* JDBlockListViewController.m in Sources */,
 				034A3A5D17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m in Sources */,
+				0377FBAA17B86F3F003CAF33 /* JDAboutViewController.m in Sources */,
 				03DFFE261794A3DA00A4CB40 /* main.m in Sources */,
 				03DFFE2A1794A3DA00A4CB40 /* JDAppDelegate.m in Sources */,
 				03F27F4717B732F100B2C7F2 /* JDSettingsViewController.m in Sources */,
