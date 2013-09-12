@@ -25,7 +25,10 @@
     self.WorkTypeSwitch.on = [[self.defaults objectForKey:WORK_TYPE_KEY] boolValue];
     self.OtherTypeSwitch.on = [[self.defaults objectForKey:OTHER_TYPE_KEY] boolValue];
     self.MainTypeSwitch.on = [[self.defaults objectForKey:MAIN_TYPE_KEY] boolValue];
-    self.FaxTypeSwitch.on = [[self.defaults objectForKey:FAX_TYPE_KEY] boolValue];
+    self.HomeFaxTypeSwitch.on = [[self.defaults objectForKey:HOME_FAX_TYPE_KEY] boolValue];
+    self.WorkFaxTypeSwitch.on = [[self.defaults objectForKey:WORK_FAX_TYPE_KEY] boolValue];
+    self.OtherFaxTypeSwitch.on = [[self.defaults objectForKey:OTHER_FAX_TYPE_KEY] boolValue];
+    self.PagerTypeSwitch.on = [[self.defaults objectForKey:PAGER_TYPE_KEY] boolValue];
 }
 
 - (IBAction)doneButtonPushed:(id)sender {
@@ -73,9 +76,24 @@
     [self.defaults synchronize];
 }
 
-- (IBAction)faxTypeSwitchChanged:(id)sender {
+- (IBAction)homeFaxTypeSwitchChanged:(id)sender {
     
-    [self.defaults setObject:@(self.FaxTypeSwitch.on) forKey:FAX_TYPE_KEY];
+    [self.defaults setObject:@(self.HomeFaxTypeSwitch.on) forKey:HOME_FAX_TYPE_KEY];
+    [self.defaults synchronize];
+}
+
+- (IBAction)pagerTypeSwitchChanged:(id)sender {
+    [self.defaults setObject:@(self.PagerTypeSwitch.on) forKey:PAGER_TYPE_KEY];
+    [self.defaults synchronize];
+}
+
+- (IBAction)workFaxTypeSwitchChanged:(id)sender {
+    [self.defaults setObject:@(self.WorkFaxTypeSwitch.on) forKey:WORK_FAX_TYPE_KEY];
+    [self.defaults synchronize];
+}
+
+- (IBAction)otherFaxTypeSwitchChanged:(id)sender {
+    [self.defaults setObject:@(self.OtherFaxTypeSwitch.on) forKey:OTHER_FAX_TYPE_KEY];
     [self.defaults synchronize];
 }
 

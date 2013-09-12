@@ -6,4 +6,7 @@
 #define WORK_TYPE_KEY @"workType"
 #define MAIN_TYPE_KEY @"mainType"
 #define OTHER_TYPE_KEY @"otherType"
-#define FAX_TYPE_KEY @"faxType"
+#define HOME_FAX_TYPE_KEY @"homeFaxType"
+#define WORK_FAX_TYPE_KEY @"workFaxType"
+#define OTHER_FAX_TYPE_KEY @"otherFaxType"
+#define PAGER_TYPE_KEY @"pagerType"

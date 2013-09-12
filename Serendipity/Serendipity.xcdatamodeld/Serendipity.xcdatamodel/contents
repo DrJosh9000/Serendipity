@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3389" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="ContactAdditions" syncable="YES"/>
-    <entity name="Settings" syncable="YES"/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BlockedContact" syncable="YES">
+        <attribute name="addressBookID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="ContactAdditions" positionX="178" positionY="189" width="128" height="45"/>
-        <element name="Settings" positionX="-27" positionY="189" width="128" height="43"/>
+        <element name="BlockedContact" positionX="178" positionY="189" width="128" height="58"/>
     </elements>
 </model>

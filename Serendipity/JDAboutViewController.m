@@ -40,6 +40,10 @@
     }];
 }
 
+- (IBAction)goToSourceCodePage:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/jdeprez/Serendipity"]];
+}
+
 -(void) viewDidDisappear:(BOOL)animated
 {
     [self.motion stopDeviceMotionUpdates];

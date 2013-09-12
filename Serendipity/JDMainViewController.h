@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (weak, nonatomic) IBOutlet UIImageView *dangerModeWarning;
+@property (weak, nonatomic) IBOutlet UIButton *randomCallButton;
+@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
 
 - (IBAction)doRandomCall:(id)sender;
 
