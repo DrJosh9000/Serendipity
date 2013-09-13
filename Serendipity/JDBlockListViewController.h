@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface JDBlockListViewController : UITableViewController
+@interface JDBlockListViewController : UITableViewController <ABPeoplePickerNavigationControllerDelegate, NSFetchedResultsControllerDelegate>
+
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 -(IBAction) doneButtonTapped:(id)sender;
 -(IBAction) addButtonTapped:(id)sender;

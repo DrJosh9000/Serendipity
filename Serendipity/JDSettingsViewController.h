@@ -10,6 +10,8 @@
 
 @interface JDSettingsViewController : UITableViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @property (weak, nonatomic) IBOutlet UISwitch *dangerModeSwitch;
 
 @property (weak, nonatomic) IBOutlet UISwitch *iPhoneTypeSwitch;

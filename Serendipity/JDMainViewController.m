@@ -54,22 +54,26 @@
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     self.dangerModeWarning.alpha = [[defaults objectForKey:DANGER_MODE_KEY] boolValue] ? 1.0 : 0.0;
-/*
+
     self.buttonAnimationTimer = [NSTimer scheduledTimerWithTimeInterval:0.05
                                                                  target:self
                                                                selector:@selector(doButtonRotation:)
                                                                userInfo:nil
-                                                                repeats:YES]; */
+                                                                repeats:YES];
 }
 
-/*
+
 -(void) doButtonRotation:(NSTimer *)theTimer
 {
     NSTimeInterval secs = [NSDate timeIntervalSinceReferenceDate];
-    self.randomCallButton.layer.transform = CATransform3DMakeRotation(secs/360.0,0.0,0.0,1.0);
-    self.settingsButton.layer.transform = CATransform3DMakeRotation(-secs/900.0,0.0,0.0,1.0);
+    const CGFloat radsperdeg = 0.0174532925;
+    //NSLog(@"%f", fmod(secs, 360)*0.0174532925);
+    self.randomCallButton.layer.transform = CATransform3DMakeRotation(fmod(secs * 2.0, 360.0)*radsperdeg,0.0,0.0,1.0);
+    [self.randomCallButton.layer setNeedsDisplay];
+    self.settingsButton.layer.transform = CATransform3DMakeRotation(-fmod(secs * 5.0, 360.0)*radsperdeg,0.0,0.0,1.0);
+    [self.settingsButton.layer setNeedsDisplay];
 }
- */
+
 
 
 /// Assumes address book is accessible.
@@ -213,9 +217,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    /*
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
     }
+     */
+    [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
 }
 
 - (IBAction)doRandomCall:(id)sender {

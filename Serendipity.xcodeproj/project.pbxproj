@@ -13,6 +13,7 @@
 		031BC8B917B76BA300805294 /* DangerMode.png in Resources */ = {isa = PBXBuildFile; fileRef = 031BC8B717B76BA300805294 /* DangerMode.png */; };
 		031BC8BA17B76BA300805294 /* DangerMode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 031BC8B817B76BA300805294 /* DangerMode@2x.png */; };
 		034A3A5D17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */; };
+		03709EDE17E289F600BD1FCB /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03709EDD17E289F600BD1FCB /* AddressBookUI.framework */; };
 		0377FBA617B86E6F003CAF33 /* JD.png in Resources */ = {isa = PBXBuildFile; fileRef = 0377FBA417B86E6F003CAF33 /* JD.png */; };
 		0377FBA717B86E6F003CAF33 /* JD@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0377FBA517B86E6F003CAF33 /* JD@2x.png */; };
 		0377FBAA17B86F3F003CAF33 /* JDAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377FBA917B86F3F003CAF33 /* JDAboutViewController.m */; };
@@ -61,6 +62,7 @@
 		031BC8B817B76BA300805294 /* DangerMode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DangerMode@2x.png"; sourceTree = "<group>"; };
 		034A3A5B17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAlertViewBlockDelegate.m; sourceTree = "<group>"; };
 		034A3A5C17A4AD7A00A45EFE /* JDAlertViewBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAlertViewBlockDelegate.h; sourceTree = "<group>"; };
+		03709EDD17E289F600BD1FCB /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		0377FBA417B86E6F003CAF33 /* JD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JD.png; sourceTree = "<group>"; };
 		0377FBA517B86E6F003CAF33 /* JD@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JD@2x.png"; sourceTree = "<group>"; };
 		0377FBA817B86F3F003CAF33 /* JDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutViewController.h; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03709EDE17E289F600BD1FCB /* AddressBookUI.framework in Frameworks */,
 				03DFFE5C179BB46700A4CB40 /* AddressBook.framework in Frameworks */,
 				03DFFE181794A3DA00A4CB40 /* UIKit.framework in Frameworks */,
 				03DFFE1A1794A3DA00A4CB40 /* Foundation.framework in Frameworks */,
@@ -149,6 +152,7 @@
 		03DFFE161794A3DA00A4CB40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03709EDD17E289F600BD1FCB /* AddressBookUI.framework */,
 				0377FBAD17B87789003CAF33 /* QuartzCore.framework */,
 				0377FBAB17B87308003CAF33 /* CoreMotion.framework */,
 				03DFFE5B179BB46700A4CB40 /* AddressBook.framework */,

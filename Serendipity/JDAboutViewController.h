@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface JDAboutViewController : UIViewController
+
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 
 -(IBAction) doneButtonTapped:(id)sender;
