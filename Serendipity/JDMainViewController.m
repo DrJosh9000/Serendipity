@@ -273,7 +273,8 @@
                                                                      otherButtonActions:
                                 ^{
                                     //NSLog(@"Calling %@ %@", name, phone);
-                                    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", record.phone]]];
+                                    NSString *escapedPhone = [record.phone stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                                    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",escapedPhone]]];
                                     self.confirmAlertDelegate = nil;
                                 }, nil];
             confirm.delegate = self.confirmAlertDelegate;
