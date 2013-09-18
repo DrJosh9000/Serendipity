@@ -256,29 +256,39 @@
             // Make a random selection!
             uint idx = random() % self.candidateList.count;
             JDSimpleContactDetails *record = [self.candidateList objectAtIndex:idx];
+            NSString *escapedPhone = [record.phone stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             
-            // Do alert confirmation.
-            UIAlertView *confirm = [[UIAlertView alloc] initWithTitle:@"Confirm"
-                                                              message:[NSString stringWithFormat:@"Call %@'s %@ (%@)?", record.name, record.label, record.phone]
-                                                             delegate:nil
-                                                    cancelButtonTitle:@"No"
-                                                    otherButtonTitles:@"Yes", nil];
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            if ([[defaults valueForKey:DANGER_MODE_KEY] boolValue])
+            {
+                // No confirmation!
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",escapedPhone]]];
+                
+            } else {
             
-            self.confirmAlertDelegate = [JDAlertViewBlockDelegate delegateWithCancelButtonAction:
-                                ^{
-                                    // NOPE.JPG
-                                    //NSLog(@"Nope, not calling %@ %@", name, phone);
-                                    self.confirmAlertDelegate = nil;
-                                }
-                                                                     otherButtonActions:
-                                ^{
-                                    //NSLog(@"Calling %@ %@", name, phone);
-                                    NSString *escapedPhone = [record.phone stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-                                    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",escapedPhone]]];
-                                    self.confirmAlertDelegate = nil;
-                                }, nil];
-            confirm.delegate = self.confirmAlertDelegate;
-            [confirm show];
+                // Do alert confirmation.
+                UIAlertView *confirm = [[UIAlertView alloc] initWithTitle:@"Confirm"
+                                                                  message:[NSString stringWithFormat:@"Call %@'s %@ (%@)?", record.name, record.label, record.phone]
+                                                                 delegate:nil
+                                                        cancelButtonTitle:@"No"
+                                                        otherButtonTitles:@"Yes", nil];
+                
+                self.confirmAlertDelegate = [JDAlertViewBlockDelegate delegateWithCancelButtonAction:
+                                    ^{
+                                        // NOPE.JPG
+                                        //NSLog(@"Nope, not calling %@ %@", name, phone);
+                                        self.confirmAlertDelegate = nil;
+                                    }
+                                                                         otherButtonActions:
+                                    ^{
+                                        //NSLog(@"Calling %@ %@", name, phone);
+                                        
+                                        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",escapedPhone]]];
+                                        self.confirmAlertDelegate = nil;
+                                    }, nil];
+                confirm.delegate = self.confirmAlertDelegate;
+                [confirm show];
+            }
         }
         else
         {
