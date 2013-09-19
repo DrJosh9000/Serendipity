@@ -170,8 +170,14 @@
                 NSString *label = (__bridge_transfer NSString*)ABMultiValueCopyLabelAtIndex(phoneMV, j);
                 if (label != nil) {
                     NSString *typeKey = [typeLookup objectForKey:label];
+                    if (typeKey == nil)
+                    {
+                        typeKey = OTHER_TYPE_KEY;
+                    }
+                    
                     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                    if ([[defaults valueForKey:typeKey] boolValue])
+                    NSNumber *typeSetting = [defaults valueForKey:typeKey];
+                    if (typeSetting != nil && [typeSetting boolValue])
                     {
                         NSString *phone = (__bridge_transfer NSString*)ABMultiValueCopyValueAtIndex(phoneMV, j);
                         NSString *niceLabel = [niceLabelLookup objectForKey:label];
@@ -183,6 +189,7 @@
                                                        phone:phone]];
                         
                     }
+                    
                 }
             }
             CFRelease(phoneMV);

@@ -279,6 +279,11 @@
 				TargetAttributes = {
 					03DFFE131794A3DA00A4CB40 = {
 						DevelopmentTeam = R4AP3NQHHW;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
